@@ -1,1 +1,52 @@
 
+print ("Welcome to my computer quiz!")
+playing = input("Do You want to play? ")
+if playing.lower() != "yes":
+  quit();
+
+print("Okay! lets play :)")
+score = 0
+numOfQuistions = 0;
+
+answer = input("What is the correct extension of the Python file? ")
+if answer.lower() == ".py":
+  print('correct!')
+  score += 1
+  numOfQuistions += 1
+else:
+  print("incorrect!")
+
+answer = input("Is Python code compiled or interpreted or both? ")
+if answer.lower() == "both":
+  print('correct!')
+  score += 1
+  numOfQuistions += 1
+else:
+  print("incorrect!")
+
+answer = input("Is Python case sensitive when dealing with identifiers? ")
+if answer.lower() == "no":
+  print('correct!')
+  score += 1
+  numOfQuistions += 1
+else:
+  print("incorrect!")
+
+answer = input("4 + 3 % 5 = ? ")
+if answer.lower() == "7":
+  print('correct!')
+  score += 1
+  numOfQuistions += 1
+else:
+  print("incorrect!")
+
+answer = input("Which keyword is used for function in Python language? ")
+if answer.lower() == "def":
+  print('correct!')
+  score += 1
+  numOfQuistions += 1
+else:
+  print("incorrect!")
+
+print("you got " + str(score) + " question correct")
+print("you got " + str((score/5) * 100) + " % question correct")
